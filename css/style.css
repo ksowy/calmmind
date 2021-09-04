@@ -44,8 +44,11 @@ header a{
 	text-decoration: none;
 	font-size: 18px;
 }   
+#relax {
+	text-transform: none;
+}
 
-.button {
+.button1 {
 	color: #fff;
 	text-decoration: none;
 	user-select: none;
@@ -55,7 +58,7 @@ header a{
 	border-radius: 4px;
 }
 
-.button:hover {
+.button1:hover {
 	background: #000; 
 }
 
@@ -91,6 +94,62 @@ header a{
 	height: 256px;
 }
 .app_play {
-	margin-top: 7px;
+	margin-top: auto;
+	margin-right: auto;
 }
-
+.container-middle {
+	height: 1808px;
+	width: 990px;
+	margin: auto;
+}
+.about {
+	background: #fff;
+	height: 1808px;
+	margin: auto;
+}
+.tel {
+	margin: 109px 0 0 -190px;
+	align-items: left;
+}
+.middle-right {
+	margin: 96px 0 0 -146px;
+}
+.text1 {
+	font-size: 42px;
+	font-family: "Nunito", sans-serif;
+	font-weight: 600;
+	width: 440px;
+	height: 126px;
+}
+.text2 {
+	font-size: 22px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	line-height: 40px;
+	width: 433px;
+	margin: 36px 0 0 10px;
+}
+.button2 {	
+	color: #fff;
+	font-size: 20px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	text-decoration: none;
+	text-align: center;
+	user-select: none;
+	background: #110ACD;
+	padding: .7em 1.5em;
+	outline: none;
+	border-radius: 4px;
+	height: 87px;
+	margin: 37px 0 0 0;
+}
+.under-text {
+	text-align: center;
+	margin: 100px 0 0 300px;
+	width: 440px;
+}
+.peeps {
+	display: block;
+	margin: 100px 0 0 -110px;
+}
