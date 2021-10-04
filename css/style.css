@@ -26,12 +26,14 @@ ul li{
 
 .container {
 	width: 990px;
-	height: 847px;
 	margin: 0 auto;
 }
 
 header a{
 	color: #000;
+}
+.header {
+	min-height: 970px;
 }
 
 .menu {
@@ -74,16 +76,16 @@ header a{
 
 .middle {
 	width: 1090px;	
-	height: 550px;
+	min-height: 550px;
 	display: flex;
 	text-transform: capitalize;
 	text-transform: none;
 	text-decoration: none;
 }
-.desk-right {
+.middle__desk-right {
 	margin: 75px 0 0 0;
 }
-.desk-left {	
+.middle__desk-left {	
 	font-size: 42px;
 	font-weight: 400;
 	text-align: right;	
@@ -93,18 +95,20 @@ header a{
 	width: 421px;
 	height: 256px;
 }
-.app_play {
+.middle-button {
 	margin-top: auto;
 	margin-right: auto;
 }
+.middle-button__app-store {
+	padding: 8px
+}
 .container-middle {
-	height: 1808px;
 	width: 990px;
 	margin: auto;
 }
 .about {
 	background: #fff;
-	height: 1808px;
+	height: 1918px;
 	margin: auto;
 }
 .tel {
@@ -141,15 +145,24 @@ header a{
 	padding: .7em 1.5em;
 	outline: none;
 	border-radius: 4px;
-	height: 87px;
+	height: 57px;
 	margin: 37px 0 0 0;
+	padding: 25px 0 15px 50px;
+}
+
+.button2:hover {
+	background: #000;
 }
 .under-text {
+	padding: 50px;
 	text-align: center;
-	margin: 100px 0 0 300px;
+	margin: 100px 0 0 220px;
 	width: 440px;
 }
 .peeps {
 	display: block;
 	margin: 100px 0 0 -110px;
+}
+.footer {
+	height: 300px;
 }
