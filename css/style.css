@@ -89,7 +89,7 @@ header a{
 .header__content__desk-left {	
 	font-size: 42px;
 	font-weight: 400;
-	text-align: center;	
+	text-align: end;	
 	justify-content: space-between;
 	font-family: desk-left, "Nunito", sans-serif;
 	margin: 200px 0 0 50px;
@@ -101,12 +101,16 @@ header a{
 }
 
 .header__middle__desk-right {
-	margin: 75px 0 0 0;
+	margin-left: 65px;
+}
+.header__image {
+	width: 500px;
+	height: 532px;
+	padding-top: 100px;
 }
 
 .middle__button {
-	margin-top: auto;
-	margin-right: auto;
+	justify-content: space-around;
 }
 .middle__button-appStore {
 	padding: 8px
@@ -130,6 +134,7 @@ header a{
 .about__middle-right {
 	margin: 96px 0 0 -146px;
 	width: 440px;
+	text-align: left;
 }
 
 .about__middle-right__text1, .about__bottom__text1 {
@@ -150,20 +155,35 @@ header a{
 	margin: 0 auto;
 }
 .about__button {	
+	user-select: none;
+	background: #110ACD;
+	padding: .7em 1.5em;
+	outline: none;
+	border-radius: 3px;
+	margin: 37px 0 0 3px;
+    width: 392px; 
+	height: 65px;
+	display: flex;
+}
+.about__button__triangle {
+	width: 0px;
+	height: 0px;
+	border-top: 20px solid transparent;
+	border-left: 34px solid #fff;
+	border-bottom: 20px solid transparent;
+	margin: 13px 0 0 20px;
+}
+.about__botton__text {
 	color: #fff;
 	font-size: 20px;
 	font-family: "Roboto", sans-serif;
 	font-weight: 400;
 	text-decoration: none;
 	text-align: center;
-	user-select: none;
-	background: #110ACD;
-	padding: .7em 1.5em;
-	outline: none;
-	border-radius: 4px;
-	height: 57px;
-	margin: 62px 0 15px 50px;
-
+	width: 277px;
+	height: 35px;
+	margin: 0;
+	padding: 8px 0 10px 10px;
 }
 
 .about__button:hover {
@@ -176,12 +196,16 @@ header a{
 	width: 440px;
 }
 .about__peeps {
+	width: 1200px;	
+	height: 324px;
+	margin: 100px 0 0 -100px;
+	background-image: url(../img/Peeps-desktop.png);
+}
+/* .about__peeps-desktop {
 	display: block;
-	width: 1200px;
 	margin: 100px 0 0 -110px;
 	align-items: center;
-
-}
+} */
 .footer {
 	height: 345px;
 }
@@ -196,44 +220,138 @@ header a{
 	.container {
 		width: 846px;
 	}
-	.header__menu-logo{
-		width: 100%;
+	.header__content {
+		width: 846px;
 	}
-	.peeps {
-		width: 95%;
+	.header__menu-vector {
+		margin-right: 160px;
+	}
+	.header__content__text {
+		font-weight: 600;
+		width: 321px;
+	}	
+	.header__middle__desk-right {
+		margin-left: 0px;
+	}
+	.header__image {
+		width: 562px;
+		height: 600px;
+		margin: 70px 0 0 0;
+		padding: 0px;
 	}
 	.middle__desk-left {	
 		font-weight: 600;
 	}
-	.about__middle-right {
-		width: 40%;
-	}
 	.about__iphone {
-		width: 45%;
+		width: 732px;
+		margin-left: -150px;
+	}
+	.about__middle-right {
+		width: 406px;
+		text-align: left;
+	}
+	.about__middle-right__text1 {
+		width: 385px;
+	}
+	.about__middle-right__text2 {
+		width: 395px;
+		margin: 0;
+	}
+	.about__bottom {
+		width: 440px;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.about__button {
+		width: 392px;
+		height: 65px;
 	}
 	.about__peeps {
-		width: 100%;
-	}
-}
-
-@media screen and (max-width: 991px) {
-	.container {
-		width: 720px;
-	}
-}
-
-@media screen and (max-width: 767px) {
-	.container {
-		width: 540px;
+		width: 991px;
+		margin: 100px 0 0 -75px;
+		background-image: url(../img/peeps-tablet.png);
 	}
 }
 
 @media screen and (max-width: 575px) {
 	.container {
-		width: 100%;
-		padding: 0 15px;
+		width: 347px;
 	}
-	.vector {
-		width: 100%;
+	.header {
+		min-height: 1230px;
+	}
+	.header__menu {
+		flex-direction: column;
+	}
+	.header__content {
+		flex-direction: column-reverse;
+    	margin: -90px 0 0 0;
+    	width: 100%;
+	}
+	.header__image {
+		width: 	480px;
+		height: 511px;
+	}
+	.header__content__desk-left {
+		font-weight: 600;
+    	text-align: center;
+		margin: auto;
+	}
+	.middle__button {
+		margin-top: 25px;
+	}
+	.about {
+		height: 1720px;
+	}
+	.about__content {
+		flex-direction: column;
+		margin: 0px;
+	}
+	.about__iphone {
+		align-items: center;
+    	width: 530px;
+    	height: 455px;
+   		margin: -230px 0 0 100px;
+	}
+	.about__middle-right {
+		width: 333px;
+    	align-items: center;
+    	margin: 60px 0 0 0;
+	}
+	.about__middle-right__text2 {
+		width: 328px;
+    	padding: 30px 0 0 0;
+	}
+	.about__button {
+		width: 300px;
+    	margin: 37px 0 0 -6px;
+	}
+	.about__button__triangle {
+		margin-left: 5px;
+	}
+	.about__botton__text {
+		padding-left: 0px;
+	}
+	.about__bottom {
+		margin-top: 150px;
+    	padding: 0px;
+    	width: 346px;
+	}
+	.about__bottom__text1 {
+		font-size: 26px;
+	}
+	.about__bottom__text2 {
+		width: 258px;
+    	padding: 36px 0 0 0;
+	}
+	.about__peeps {
+		width: 405px;
+		height: 238px;
+    	margin: 100px 0 0 -25px;
+		background-image: url(../img/peeps-mobile.png);
+	}
+	.footer {
+		height: 116px;
 	}
 }
